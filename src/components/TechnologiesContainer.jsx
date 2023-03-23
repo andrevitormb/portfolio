@@ -26,7 +26,7 @@ const TechnologiesContainer = () => {
     <h2>Technologies</h2>
     <div className='technologies-grid'>
       {technologies.map((tech) => (
-        <div className='technology-card' id={tech.id} hey={tech.id}>
+        <div className='technology-card' id={tech.id} key={tech.id}>
           {tech.icon}
           <div className='technology-info'>
             <h3>{tech.name}</h3>
