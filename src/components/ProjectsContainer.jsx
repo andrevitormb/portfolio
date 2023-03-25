@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../styles/components/project.sass'
-import Modal from './Modal'
+import Modal from './modal/Modal'
 
 const ProjectsContainer = () => {
   
@@ -12,12 +12,12 @@ const ProjectsContainer = () => {
       <h2>Projects</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sapiente sunt repudiandae vel obcaecati illum praesentium corporis ipsa, omnis assumenda nam officiis corrupti deleniti hic suscipit est repellendus impedit facere!</p>
       <div>
-        <button onClick={() => setOpenModal(true)}>
+        <button className='btn' onClick={() => setOpenModal(true)}>
           Abrir modal
         </button>
       </div>
       <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
-        Conteudo do modal
+        
       </Modal>
        
     </section>

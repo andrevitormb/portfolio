@@ -6,7 +6,7 @@ function bannerText(){
     const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer"];
     const [delta, setDelta] = useState(300 - Math.random() * 100)
     const [text, setText] = useState('')
-    const period = 2000;
+    const period = 1000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
